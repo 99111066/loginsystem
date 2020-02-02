@@ -45,6 +45,7 @@ def display_options():
 filename = 'users.txt'
 userdb = open(filename,'r')
 cur_user = False
+
 print('Welcome to terminal login system')
 while True:
     display_options()
@@ -62,4 +63,5 @@ while True:
     else:
         print('Please enter a valid option')
     print()
+
 userdb.close()
