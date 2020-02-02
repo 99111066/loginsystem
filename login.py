@@ -23,7 +23,7 @@ def create_user():
         print('User created successfully')
     else:
         print(f'username {username} already exists')
-    pass
+
 
 def find_user(username):
     for line in userdb:
@@ -34,11 +34,13 @@ def find_user(username):
 
     return False
 
+
 def display_options():
     if cur_user:
         print(f'logged in as {cur_user}  -  (l)ogout  (q)uit?')
     else:
         print('(l)ogin  (r)egister  (q)uit?')
+
 
 filename = 'users.txt'
 userdb = open(filename,'r')
